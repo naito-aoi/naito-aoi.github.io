@@ -1,7 +1,131 @@
 <!DOCTYPE html>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function () {
+var headerHight = 90;
+$('a[href^=#]').click(function(){
+    var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+       var position = target.offset().top-headerHight;
+    $("html, body").animate({scrollTop:position}, 500, "swing");
+       return false;
+  });
+});
+</script>
+
 <html>
-<body>
-<h1>Aoi Naito</h1>
-<p>Getting ready.</p>
-</body>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150987588-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-150987588-1');
+    </script>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-logo"><b>Aoi Naito<span>.</span></b></div>
+      <div class="header-list">
+        <ul>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#biography">Biography</a></li>
+          <li><a href="#contact">Contact & Link</a></li>
+          <li><a href="japanese.html">日本語</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="copy-container">
+        <h1>Aoi Naito<span>.</span></h1>
+        <h2></h2>
+      </div>
+
+      <div class="contents">
+        <h3 class="section-title" id="research">Research</h3>
+          <div>
+            <!--<p class="explain">My research mainly focuses on the following question: "How collective intelligence can emerge in our human societies".
+              To approach this, I have conducted several experimental researches and analyzed datasets in computational modeling methods.</p>-->
+          </div>
+        <h3 class="section-title" id="publications">Publications</h3>
+        <h3 class="section-title" id="biography">Biography</h3>
+          <div>
+            <h4 class="sub-section">Academic Education</h4>
+              <table>
+                <tr>
+                  <th class="th-period">Period</th>
+                  <th class="th-affiliation">Affiliation</th>
+                  <th class="th-degree">Degree</th>
+                </tr>
+                <tr>
+                  <td>April 2014 - March 2018</td>
+                  <td>Faculty of Letters, Kyoto University</td>
+                  <td>B. A.</td>
+                </tr>
+                <tr>
+                  <td>April 2018 - March 2020</td>
+                  <td>Graduate school of Humanities and Sociology, The University of Tokyo</td>
+                  <td><p>M. A. (Expected)</p><p>(Supervisor: Tatsuya Kameda)</p></td>
+                </tr>
+                <tr>
+                  <td>April 2020 - Current</td>
+                  <td>Graduate school of Humanities and Sociology, The University of Tokyo</td>
+                  <td><p>Ph. D student</p><p>(Supervisor: Tatsuya Kameda)</p></td>
+                </tr>
+              </table>
+              <h4 class="sub-section">Work History</h4>
+                <table>
+                  <tr>
+                    <th class="th-period">Period</th>
+                    <th class="th-affiliation">Affiliation</th>
+                    <th class="th-degree">Position</th>
+                  </tr>
+                  <tr>
+                    <td>October 2015 - March 2018</td>
+                    <td>Kokoro Research Center, Kyoto University</td>
+                    <td>Office Assistant</td>
+                  </tr>
+                  <tr>
+                    <td><p>October 2018 - March 2019</p><p>October 2019 - March 2020</p></td>
+                    <td>Graduate school of Humanities and Sociology, The University of Tokyo</td>
+                    <td>Teaching Assistant</td>
+                  </tr>
+                  <tr>
+                    <td>April 2020 - Current</td>
+                    <td>Japan Society for the Promotion of Science</td>
+                    <td>Research Fellowship for Young Scientists (DC1)</td>
+                  </tr>
+                </table>
+          </div>
+        <h3 class="section-title" id="contact">Contact & Link</h3>
+          <div>
+            <h4 class="sub-section">E-mail</h4>
+            <ul>
+              <li>naito.aoi.94[at]gmail.com</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="sub-section">Link</h4>
+              <ul>
+                <li><!--Tatsuya Kameda [URL]--></li>
+                <li><!--Department of Social Psychology, The University of Tokyo. [URL]--></li>
+              </ul>
+          </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-credit">
+        <p>Copyright &copy; 2019 Aoi Naito.</p>
+      </div>
+    </div>
+  </body>
 </html>
