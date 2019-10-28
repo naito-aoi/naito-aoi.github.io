@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function () {
+var headerHight = 90;
+$('a[href^=#]').click(function(){
+    var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+       var position = target.offset().top-headerHight;
+    $("html, body").animate({scrollTop:position}, 500, "swing");
+       return false;
+  });
+});
+</script>
+
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150987588-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-150987588-1');
+    </script>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-logo"><b>Aoi Naito</b><span>.</span></div>
+      <div class="header-list">
+        <ul>
+          <li><a href="#research">研究</a></li>
+          <li><a href="#publications">業績</a></li>
+          <li><a href="#biography">経歴</a></li>
+          <li><a href="#contact">連絡先・リンク</a></li>
+          <li><a href="index.html">English</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="copy-container">
+        <h1>Aoi Naito<span>.</span></h1>
+        <h2></h2>
+      </div>
+
+      <div class="contents">
+        <h3 class="section-title" id="research">研究</h3>
+          <div>
+            <p class="explain"></p>
+          </div>
+        <h3 class="section-title" id="publications">業績</h3>
+        <h3 class="section-title" id="biography">経歴</h3>
+          <div>
+            <h4 class="sub-section">学歴</h4>
+              <table>
+                <tr>
+                  <th class="th-period">期間</th>
+                  <th class="th-affiliation">所属</th>
+                  <th class="th-degree">学位</th>
+                </tr>
+                <tr>
+                  <td>2014年4月 - 2018年3月</td>
+                  <td>京都大学 文学部</td>
+                  <td>学士（文学）</td>
+                </tr>
+                <tr>
+                  <td>2018年4月 - 2020年3月</td>
+                  <td>東京大学 人文社会系研究科</td>
+                  <td><p>修士（社会心理学）見込</p><p>(指導教員: 亀田達也)</p></td>
+                </tr>
+                <tr>
+                  <td>2020年4月 - 現在</td>
+                  <td>東京大学 人文社会系研究科</td>
+                  <td><p>博士課程在学中</p><p>(指導教員: 亀田達也)</p></td>
+                </tr>
+              </table>
+              <h4 class="sub-section">職歴</h4>
+                <table>
+                  <tr>
+                    <th class="th-period">期間</th>
+                    <th class="th-affiliation">所属</th>
+                    <th class="th-degree">役職</th>
+                  </tr>
+                  <tr>
+                    <td>2015年10月 - 2018年3月</td>
+                    <td>京都大学 こころの未来研究センター</td>
+                    <td>オフィス・アシスタント</td>
+                  </tr>
+                  <tr>
+                    <td><p>2018年10月 - 2019年3月</p><p>2019年10月 - 2020年3月</p></td>
+                    <td>東京大学 人文社会系研究科</td>
+                    <td>ティーチング・アシスタント</td>
+                  </tr>
+                  <tr>
+                    <td>2020年4月 - 現在</td>
+                    <td>日本学術振興会</td>
+                    <td>特別研究員（DC1）</td>
+                  </tr>
+                </table>
+          </div>
+        <h3 class="section-title" id="contact">連絡先・リンク</h3>
+          <div>
+            <h4 class="sub-section">メール</h4>
+            <ul>
+              <li>naito.aoi.94[at]gmail.com</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="sub-section">リンク</h4>
+              <ul>
+                <li><!--亀田達也研究室 [URL]--></li>
+                <li><!--東京大学文学部社会心理学 [URL]--></li>
+              </ul>
+          </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-credit">
+        <p>Copyright &copy; 2019 Aoi Naito.</p>
+      </div>
+    </div>
+  </body>
+</html>
