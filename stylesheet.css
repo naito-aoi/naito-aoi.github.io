@@ -1,1 +1,131 @@
+body {
+  font-family: "Avenir Next", "ヒラギノ角ゴ ProN W3";
+}
 
+li {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #ef857d;
+  text-decoration: none;
+}
+
+table{
+  width: 100%;
+  border-spacing: 0;
+}
+
+table th{
+  border-bottom: solid 2px #ff6347;
+  text-align: left;
+  padding: 10px 0;
+}
+
+table td{
+  text-align: left;
+  padding: 20px 0;
+}
+
+.header {
+  /* background-color: #26d0c9;*/
+  background-color: #0075c2;
+  color: #fff;
+  display: flex;
+  height: 90px;
+  width: 100%;
+  top: 0; /* 上部から配置の基準位置を決める */
+  left: 0; /* 左から配置の基準位置を決める */
+  position: fixed;
+}
+
+.header-logo {
+  float: left;
+  font-size: 50px;
+  padding: 20px 10px 20px 40px;
+}
+
+.header-logo span {
+  color: #ff6347;
+}
+
+.header-list li {
+  float: left;
+  font-size: 22px;
+  padding: 33px;
+}
+
+.header-language {
+}
+
+.main {
+  padding: 100px 80px;
+}
+
+.explain {
+  text-indent: 1em;
+}
+
+.copy-container h1 {
+  font-size: 140px;
+  margin-bottom: 50px;
+  /*background-image: url("image/network.png");*/
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.copy-container h2 {
+  font-size: 60px;
+}
+
+.copy-container span {
+  color: #ff6347;
+}
+
+.contents {
+  height: 2000px;
+  margin-top: 100px;
+}
+
+.section-title {
+  border-bottom: 2px solid #dee7ec;
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  color: #ff6347;
+}
+
+.sub-section {
+  font-size: 24px;
+}
+
+.th-period {
+  width: 25%;
+}
+
+.th-affiliation {
+  width: 50%;
+}
+
+.th-degree {
+  width: 35%;
+}
+
+.footer {
+  background-color: #44617b;
+  color: #fff;
+  height: 140px;
+  width: 100%;
+}
+
+.footer-credit {
+  padding-top: 50px;
+  text-align: center;
+}
