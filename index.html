@@ -3,7 +3,7 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(function () {
-var headerHight = 90;
+var headerHight = $('.header').outerHeight(true);
 $('a[href^=#]').click(function(){
     var href= $(this).attr("href");
       var target = $(href == "#" || href == "" ? 'html' : href);
@@ -31,7 +31,7 @@ $('a[href^=#]').click(function(){
   </head>
   <body>
     <div class="header">
-      <div class="header-logo"><b>Aoi Naito<span>.</span></b></div>
+      <div class="header-logo"><a href="#top"><b>Aoi Naito<span>.</span></b></a></div>
       <div class="header-list">
         <ul>
           <li><a href="#research">Research</a></li>
@@ -43,7 +43,7 @@ $('a[href^=#]').click(function(){
       </div>
     </div>
 
-    <div class="main">
+    <div class="main" id="top">
       <div class="copy-container">
         <h1>Aoi Naito<span>.</span></h1>
         <h2></h2>
@@ -67,17 +67,17 @@ $('a[href^=#]').click(function(){
                 </tr>
                 <tr>
                   <td>April 2014 - March 2018</td>
-                  <td>Faculty of Letters, Kyoto University</td>
+                  <td><p>Faculty of Letters,</p><p>Kyoto University</p></td>
                   <td><p>B. A.</p><p>(Supervisor: N. Abe, H. Ashida & K. Yaoi)</p></td>
                 </tr>
                 <tr>
                   <td>April 2018 - March 2020</td>
-                  <td>Graduate school of Humanities and Sociology, The University of Tokyo</td>
+                  <td><p>Graduate school of Humanities and Sociology,</p><p>The University of Tokyo</p></td>
                   <td><p>M. A. (Expected)</p><p>(Supervisor: T. Kameda)</p></td>
                 </tr>
                 <tr>
                   <td>April 2020 - Current</td>
-                  <td>Graduate school of Humanities and Sociology, The University of Tokyo</td>
+                  <td><p>Graduate school of Humanities and Sociology,</p><p>The University of Tokyo</p></td>
                   <td><p>Ph. D student</p><p>(Supervisor: T. Kameda)</p></td>
                 </tr>
               </table>
@@ -90,12 +90,12 @@ $('a[href^=#]').click(function(){
                   </tr>
                   <tr>
                     <td>October 2015 - March 2018</td>
-                    <td>Kokoro Research Center, Kyoto University</td>
+                    <td><p>Kokoro Research Center,</p><p>Kyoto University</p></td>
                     <td>Office Assistant</td>
                   </tr>
                   <tr>
                     <td><p>October 2018 - March 2019</p><p>October 2019 - March 2020</p></td>
-                    <td>Graduate school of Humanities and Sociology, The University of Tokyo</td>
+                    <td><p>Graduate school of Humanities and Sociology,</p><p>The University of Tokyo</p></td>
                     <td>Teaching Assistant</td>
                   </tr>
                   <tr>
