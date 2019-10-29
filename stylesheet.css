@@ -37,7 +37,7 @@ table td{
   background-color: #0075c2;
   color: #fff;
   display: flex;
-  height: 90px;
+  height: auto;
   width: 100%;
   top: 0; /* 上部から配置の基準位置を決める */
   left: 0; /* 左から配置の基準位置を決める */
@@ -73,6 +73,7 @@ table td{
 
 .copy-container h1 {
   font-size: 140px;
+  margin-top: 50px
   margin-bottom: 50px;
   /*background-image: url("image/network.png");*/
   background-repeat: no-repeat;
