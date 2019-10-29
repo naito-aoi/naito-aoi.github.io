@@ -34,7 +34,8 @@ table td{
 
 .header {
   /* background-color: #26d0c9;*/
-  background-color: #0075c2;
+  /*background-color: #0075c2;*/
+  background-color: #006888;
   color: #fff;
   display: flex;
   height: auto;
