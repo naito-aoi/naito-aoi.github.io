@@ -7,7 +7,7 @@
 
 body {
   background-color: #ffffff;
-  font-family: 'Avenir Next', 'Century Gothic', Roboto, "ヒラギノ角ゴ ProN W3", sans-serif;
+  font-family: 'Avenir Next', 'Century Gothic', 'Helvetica Neue','Helvetica','Arial', "ヒラギノ角ゴ ProN W3", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #555;
@@ -18,7 +18,7 @@ body {
 /* Titles */
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Avenir Next', 'Century Gothic', Roboto, "ヒラギノ角ゴ ProN W3", sans-serif;
+  font-family: 'Avenir Next', 'Century Gothic', 'Helvetica Neue','Helvetica','Arial', "ヒラギノ角ゴ ProN W3", sans-serif;
   font-weight: 700;
   color: #333;
 }
