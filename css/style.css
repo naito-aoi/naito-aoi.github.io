@@ -7,7 +7,7 @@
 
 body {
   background-color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Avenir Next', sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #555;
@@ -18,7 +18,7 @@ body {
 /* Titles */
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Avenir Next', sans-serif;
   font-weight: 700;
   color: #333;
 }
@@ -77,7 +77,6 @@ hr {
 }
 
 .navbar {
-  text-transform: uppercase;
   margin-bottom: 0px;
 }
 
@@ -105,7 +104,7 @@ hr {
 
 .navbar-brand {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 30px;
   letter-spacing: 2px;
 }
 
