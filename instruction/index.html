@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>東京大学・実験社会科学オンライン実験</title>
+<link href="_common/images/icon.ico" rel="shortcut icon">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
+<link href="_common/css/style.css" rel="stylesheet">
+<script src="_common/scripts/platform.js"></script>
+</head>
+<body>
+<header>
+<div class="container">
+<h1>実験参加同意フォーム</h1>
+<h2>東京大学・実験社会科学オンライン実験（亀田研究室）</h2>
+</div><!-- /.container -->
+</header>
+<main>
+<div class="container">
+  <p style="text-align: right;">2020年10月<br>研究代表者<br>東京大学大学院人文社会系研究科教授・亀田達也</p><br>
+  <p>本日は、実験にご参加いただきありがとうございます。<br><!--
+  -->実験を始める前に、以下の内容への同意をお願いしております。</p><br>
+  <ol class="consent">
+    <li>本実験は、東京大学大学院人文社会系研究科の亀田達也教授による学術的研究の一部として実施されています。</li>
+    <li>本実験の目的は、社会的場面における意思決定メカニズムを明らかにすることです。実験参加者の方（あなた）には、いくつかの実験課題とアンケートに取り組んでいただきます。<!--
+    -->詳しい内容については、後のページで説明します。</li>
+    <li>所要時間は40分を予定しています。もし実験開始後に参加同意を撤回したい場合には、ブラウザを閉じることにより途中でいつでも実験を辞退できます。</li>
+    <li>実験終了後に、メールアドレスや氏名などの個人情報を入力していただきます。入力していただいた個人情報は、実験参加謝礼の支払いのみに使用し、当研究室が厳重に管理いたします。</li>
+    <li>実験中のあなたの意思決定や質問への回答の匿名性は保証されています。実験で得られたデータは完全に匿名化された上でアーカイブに保存されますので、あなた個人がどのような回答<!--
+    -->をしたか特定されることはありません。また、これらのデータは統計学的に分析する目的以外で利用されたり、公表されたりすることはありません。</li>
+    <li>実験後、実験の内容や報酬額などに関する情報を<span style="color: #ff6347">他の人に話したり、SNS等を通じてインターネット上に投稿したりすることはおやめください。</span>これらの行為を発見した場合には、今後<!--
+    -->当研究室で行うすべての実験への参加をお断りする可能性があります。</li>
+    <li>次のページから、実験内容についての説明を行います。以上の説明を読み、実験への参加に同意していただける方は、<span style="color: #ff6347">「上記の内容に同意して、実験に参加する」にチェック</span>を入れたうえで、次のページに進んでください。<!--
+    -->実験への参加を辞退される方は、このままブラウザを閉じてください。</li>
+  </ol><br>
+
+  <form action="#" id="form" style="text-align: center;">
+    <input type="checkbox" id="checkbox1" onchange="checkAlert();">
+    上記の内容に同意して、実験に参加する
+    </input>
+  </form><br>
+
+  <div style="text-align: center"><img id="next" onclick="trans()"/></div>
+  <p id="alert" style="text-align: center;"></p>
+
+</div><!-- /.container -->
+</main>
+<footer>
+<div class="container">
+</div><!-- /.container -->
+</footer>
+<script>
+'use strict'
+
+let url_param = new URLSearchParams(window.location.search);
+let sona_id = url_param.get("id");
+
+if(sona_id === null) {
+  sona_id = Math.random().toString(32).substring(2);
+}
+
+function checkAlert(){
+  if(document.getElementById("checkbox1").checked) {
+    document.getElementById("next").src = "_common/images/next_1.png";
+    document.getElementById("alert").textContent = "「次へ」ボタンをクリックすると、自動的に全画面表示に切り替わります。";
+    document.getElementById("alert").style.color = "#ff6347";
+  } else {
+    document.getElementById("next").src = "";
+    document.getElementById("alert").textContent = "チェックボックスが空です！";
+    document.getElementById("alert").style.color = "#ff6347";
+  }
+}
+
+function trans() {
+  // 画面遷移処理をここに記述する
+
+  // ブラウザ判定
+  /*
+  let br = platform.name;
+  if(br === "Chrome") {
+    console.log("「Google Chrome」をお使いですね!");
+  } else {
+    window.alert('このブラウザは対応していません。Google Chromeからアクセスしてください。');
+    window.open('about:blank', '_self').close();
+  }
+  */
+
+  // OS判定
+  let os = platform.os.family;
+  if(os === "Windows" || os === "OS X") {
+    console.log("「コンピュータ」をお使いですね!");
+    fullopen(`instruction.html?id=${sona_id}`);
+  } else {
+    window.alert('このコンピュータは対応していません。他のデバイスからアクセスしてください。');
+    window.open('about:blank', '_self').close();
+  }
+
+  //window.location.href = 'instruction.html';
+}
+
+
+function fullopen(strURL) {
+  var options;
+
+  if (navigator.appName.charAt(0)=='M')
+      options = "fullscreen=1,scrollbars=0";
+  else if (navigator.appName.charAt(0)=='N')
+      options = "scrollbars=0,left=0,top=0"
+              + ",width=" + screen.width
+              + ",height=" + screen.height;
+
+  window.open(strURL, "", options);
+}
+</script>
+</body>
+</html>
