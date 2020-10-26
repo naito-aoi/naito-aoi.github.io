@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>東京大学・実験社会科学オンライン実験</title>
+<link href="_common/images/icon.ico" rel="shortcut icon">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
+<link href="_common/css/style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+<div class="container">
+<h1>確認テスト</h1>
+<h2>東京大学・実験社会科学オンライン実験（亀田研究室）</h2>
+</div><!-- /.container -->
+</header>
+<main>
+<div class="container">
+  <p>各設問の選択肢のうち、正しい説明文を1つ選んでクリックしてください。<br><br>以下のすべての問題に正解すると、実験に進むことができます。<br><!--
+  -->わからない所があれば、「実験説明に戻る」ボタンをクリックして、説明を再度確認してください。</p><br>
+  <ol class="test-q">
+    <li><span style="font-size:1.3em">問1　</span>この課題であなたの追加謝金額を最大にするためには……
+    <form action="#" id="q1"><br>
+      <div>
+        <label id="checkbox1">
+          <input type="radio" id="q11">
+            ポイントの絶対値が最も高いタイルを1回でも探し当てられるように、タイルを選ぶ。
+        </label>
+      </div><br>
+      <div>
+        <label id="checkbox1">
+          <input type="radio" id="q12">
+            他の参加者を含む全員の報酬ポイントの総額をなるべく多くするように、タイルを選ぶ。
+        </label>
+      </div><br>
+      <div>
+        <label id="checkbox1">
+          <input type="radio" id="q13">
+            自分自身の最終的な獲得ポイントの総額をなるべく多くするように、タイルを選ぶ。
+        </label>
+    </div><br>
+    </form>
+    </li>
+  </ol><br>
+  <ol class="test-q">
+    <li><span style="font-size:1.3em">問2　</span>タイル選択の制限時間は……
+    <form action="#" id="q2" name="q2"><br>
+      <div>
+        <label id="checkbox1">
+          <input type="radio" id="q21">
+            各回10秒である。
+        </label>
+      </div><br>
+      <div>
+        <label id="checkbox1">
+          <input type="radio" id="q22">
+            各回20秒である。
+        </label>
+      </div><br>
+      <div>
+        <label id="checkbox1">
+          <input type="radio" id="q23">
+            各回30秒である。
+        </label>
+    </div><br>
+    </form>
+    </li>
+  </ol><br>
+  <ol class="test-q">
+    <li><span style="font-size:1.3em">問3</span>
+    <form action="#" id="q3" name="q3"><br>
+      <div>
+        <label id="checkbox1">
+          <input type="radio" id="q31">
+            他の参加者に情報を共有すると、自分がそれまでに選択した全てのタイルとその報酬ポイントが共有される。
+        </label>
+      </div><br>
+      <div>
+        <label id="checkbox1">
+          <input type="radio" id="q32">
+            他の参加者から共有される情報は、過去に行われた実験のデータであり、自分の行動に関わらず元々決まっている。
+        </label>
+      </div><br>
+      <div>
+        <label id="checkbox1">
+          <input type="radio" id="q33">
+            情報を共有すると、他の参加者がその情報を利用して、自分の選択したタイルと同じタイルを選ぶこともありうる。
+        </label>
+    </div><br>
+    </form>
+    </li>
+  </ol><br>
+
+  <div style="text-align: center">
+    <img src = "_common/images/test_2.png"; id="previous"  onclick="backToInst();"/>
+    <img src = "_common/images/test_3.png"; id="next" onclick="correctJudge()"/>
+  </div>
+  <p id="alert" style="text-align: center;"></p>
+
+</div><!-- /.container -->
+</main>
+<footer>
+<div class="container">
+</div><!-- /.container -->
+</footer>
+<script>
+'use strict'
+
+let url_param = new URLSearchParams(window.location.search);
+let sona_id = url_param.get("id");
+
+if(sona_id === null) {
+  sona_id = Math.random().toString(32).substring(2);
+}
+
+function backToInst() {
+  window.location.href = 'instruction.html';
+}
+
+function correctJudge(){
+  let q1Check = 0;
+  let q2Check = 0;
+  let q3Check = 0;
+  let question1 = document.getElementById("q1");
+  let question2 = document.getElementById("q2");
+  let question3 = document.getElementById("q3");
+  for(let i = 0; i < question1.length; i++) {
+    if(question1[i].checked) {
+      q1Check = 1;
+    }
+  }
+  for(let i = 0; i < question2.length; i++) {
+    if(question2[i].checked) {
+      q2Check = 1;
+    }
+  }
+  for(let i = 0; i < question3.length; i++) {
+    if(question3[i].checked) {
+      q3Check = 1;
+    }
+  }
+
+  if(q1Check !== 1 || q2Check !== 1 || q3Check !== 1) {
+    document.getElementById("alert").textContent = "すべての問題に回答してください！";
+    document.getElementById("alert").style.color = "#ff6347";
+  } else {
+    if(document.getElementById("q13").checked && document.getElementById("q21").checked && document.getElementById("q33").checked) {
+      window.location.href = `https://secure-hollows-47546.herokuapp.com/?id=${sona_id}`;
+    } else {
+      document.getElementById("next").src = "";
+      document.getElementById("alert").textContent = "不正解の問題があります！実験説明を確認して、もう一度回答してください。";
+      document.getElementById("alert").style.color = "#ff6347";
+    }
+  }
+}
+</script>
+</body>
+</html>
