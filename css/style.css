@@ -96,11 +96,11 @@ hr {
 }
 
 .navbar-inverse .navbar-nav>li>a {
-  color: white;
+  color: #fff;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
-  color: #222222;
+  color: #ff6347;
 }
 
 .navbar-brand {
@@ -110,7 +110,7 @@ hr {
 }
 
 .navbar-inverse .navbar-brand {
-  color: white;
+  color: #fff;
 }
 
 .navbar-inverse .navbar-toggle {
@@ -351,14 +351,14 @@ bt {
 /* Copyrights */
 
 #copyrights {
-  background: #222222;
+  background: #fff;
   padding: 20px 0;
   text-align: center;
 }
 
 #copyrights p {
   margin-bottom: 5px;
-  color: #fff;
+  color: #999;
 }
 
 #copyrights a {
