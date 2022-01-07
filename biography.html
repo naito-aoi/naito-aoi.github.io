@@ -1,226 +1,222 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150987588-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-150987588-1');
-  </script>
-
-  <meta charset="utf-8">
-  <title>経歴</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
-
-  <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
+  <title>Biography</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta content="内藤碧（東京大学大学院人文社会系研究科・博士後期課程）の個人ウェブサイトです. 人間の社会における集合知について、行動実験やシミュレーションを使って研究しています." name="description">
+  <link rel="stylesheet" href="vendors/owl-carousel/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/css/owl.theme.default.css">
+  <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="vendors/aos/css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/2ded7a8d59.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
-
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-    Template Name: Stanley
-    Template URL: https://templatemag.com/stanley-bootstrap-freelancer-template/
-    Author: TemplateMag.com
-    License: https://templatemag.com/license/
-  ======================================================= -->
 </head>
-
-<body>
-
-  <!-- Static navbar -->
-  <div class="navbar navbar-inverse navbar-static-top">
+<body id="body" data-spy="scroll" data-target=".navbar" data-offset="100">
+  <header id="header-section">
+    <nav class="navbar navbar-expand-lg pl-3 pl-sm-0" id="navbar">
     <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">内藤 碧 | Aoi Naito</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="research.html">研究</a></li>
-            <li><a href="publication.html">業績</a></li>
-            <li><a href="biography.html">経歴</a></li>
-            <li><a href="contact_link.html">連絡先・リンク</a></li>
-            <li><a href="english.html">English</a></li>
+      <div class="navbar-brand-wrapper d-flex w-100">
+        <a class="navbar-brand" href="#header-section"><b>Aoi Naito</b></a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="mdi mdi-menu navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse navbar-menu-wrapper" id="navbarSupportedContent">
+        <ul class="navbar-nav align-items-lg-center align-items-start ml-auto">
+          <li class="d-flex align-items-center justify-content-between pl-4 pl-lg-0">
+            <div class="navbar-collapse-logo">
+              <a class="navbar-brand" href="#header-section"><b>Aoi Naito</b></a>
+            </div>
+            <button class="navbar-toggler close-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="mdi mdi-close navbar-toggler-icon pl-5"></span>
+            </button>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="publications.html">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#body">Biography<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item btn-contact-us pl-4 pl-lg-0">
+            <button class="btn btn-info" onclick="alertFunction()">English</button>
+          </li>
         </ul>
       </div>
-      <!--/.nav-collapse -->
     </div>
-  </div>
-
-  <!-- +++++ Posts Lists +++++ -->
-  <!-- +++++ First Post +++++ -->
-  <div class="container pt">
-    <div class="col-lg-10 col-lg-offset-1 centered">
-      <h1>経歴</h1>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-lg-10 col-lg-offset-1 left">
-        <h3><font color="#ff6347">略歴</font></h3>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>期間</th>
-                    <th>所属</th>
-                    <th>資格</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>2014年4月 - 2018年3月</td>
-                    <td>京都大学　文学部</td>
-                    <td>学士（文学）</td>
-                </tr>
-                <tr>
-                    <td>2018年4月 - 2020年3月</td>
-                    <td>東京大学大学院　人文社会系研究科</td>
-                    <td>修士（社会心理学）<br>(指導: 亀田達也)</td>
-                </tr>
-                <tr>
-                    <td>2020年4月 - 現在</td>
-                    <td>東京大学大学院　人文社会系研究科</td>
-                    <td>博士課程・在学中<br>(指導: 亀田達也)</td>
-                </tr>
-                <tr>
-                    <td>2020年4月 - 現在</td>
-                    <td>日本学術振興会</td>
-                    <td>特別研究員（DC1）</td>
-                </tr>
-            </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-10 col-lg-offset-1">
-        <h3><font color="#ff6347">教育歴</font></h3>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>期間</th>
-                    <th>所属</th>
-                    <th>職名</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>2015年10月 - 2018年3月</td>
-                    <td>京都大学　こころの未来研究センター</td>
-                    <td>オフィス・アシスタント</td>
-                </tr>
-                <tr>
-                    <td>2018年10月 - 2019年1月<br>2019年10月 - 2020年1月</td>
-                    <td>東京大学大学院　人文社会系研究科</td>
-                    <td>ティーチング・アシスタント<br>（社会心理学演習Ⅰ）</td>
-                </tr>
-                <tr>
-                    <td>2020年10月 - 2021年1月</td>
-                    <td>東京大学大学院　人文社会系研究科</td>
-                    <td>ティーチング・アシスタント<br>（社会心理学実習IV）</td>
-                </tr>
-                <tr>
-                    <td>2021年10月 - 2022年1月</td>
-                    <td>東京大学大学院　人文社会系研究科</td>
-                    <td>ティーチング・アシスタント<br>（社会心理学実習IV）</td>
-                </tr>
-            </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-10 col-lg-offset-1">
-        <h3><font color="#ff6347">受賞</font></h3>
-          <p><a href="http://www.fost.or.jp/award.html"><u><b>第8回FOST新人賞</b></u></a>
-            <span class="glyphicon glyphicon-link" style="font-size:16px; color:#ff6347;"></span>　
-            公益財団法人科学技術融合振興財団（2021年3月4日; コーエーテクモ日吉本社）</p>
-          <p><a href="http://www.socialpsychology.jp/award/wakate_2019_2.html"><u><b>若手研究者奨励賞</b></u></a>
-            <span class="glyphicon glyphicon-link" style="font-size:16px; color:#ff6347;"></span>　
-            日本社会心理学会（2019年度）</p>
-          <p><a href="https://sites.google.com/view/expss2018/home"><u><b>ポスター賞</b></u></a>
-            <span class="glyphicon glyphicon-link" style="font-size:16px; color:#ff6347;"></span>　
-            第22回実験社会科学カンファレンス（2018年12月22-23日; 名古屋市立大学）</p>
-      </div>
-    </div>
-    <!-- /row -->
-    <div class="row">
-      <div class="col-lg-10 col-lg-offset-1">
-        <h3><font color="#ff6347">研究費</font></h3>
-        <p><a href="https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-20J20900/"><u><b>特別研究員奨励費</b></u></a>
-          <span class="glyphicon glyphicon-link" style="font-size:16px; color:#ff6347;"></span>　
-          科学研究費助成事業（科研費）（&yen;3,400,000; 2020年度-2022年度）</p>
-        <p><a href="http://www.fost.or.jp/subsidies.html"><u><b>補助金助成</b></u></a>
-          <span class="glyphicon glyphicon-link" style="font-size:16px; color:#ff6347;"></span>　
-          公益財団法人科学技術融合振興財団　（&yen;225,000; 2019年度）</p>
-      </div>
-    </div>
-    <!-- /row -->
-    <!-- /row -->
-    <div class="row">
-      <div class="col-lg-10 col-lg-offset-1">
-        <h3><font color="#ff6347">その他</font></h3>
-        <p><a href="https://www.jasso.go.jp/shogakukin/taiyochu/gyosekimenjyo/index.html"><u><b>特に優れた業績による返還免除</b></u></a>
-          <span class="glyphicon glyphicon-link" style="font-size:16px; color:#ff6347;"></span>　
-          独立行政法人日本学生支援機構（2019年度）</p>
-        <p><a href="https://shibuya-qws.com/project/towards-the-mirror-world"><u><b>プロジェクト・メンバー</b></u></a>
-          <span class="glyphicon glyphicon-link" style="font-size:16px; color:#ff6347;"></span>　
-          渋谷スクランブルスクエア株式会社（2019年度; 渋谷QWSチャレンジプロジェクト・第1期）</p>
-        <p><a href="http://www.inoue-ikuei.jp/"><u><b>奨学生</b></u></a>
-          <span class="glyphicon glyphicon-link" style="font-size:16px; color:#ff6347;"></span>　
-          公益財団法人井上育英会（2015年度-2017年度）</p>
-        <p><a href="http://www.john-man.rp.kyoto-u.ac.jp/student/adption.html"><u><b>派遣学生</b></u></a>
-          <span class="glyphicon glyphicon-link" style="font-size:16px; color:#ff6347;"></span>　
-          京都大学若手海外派遣事業ジョン万プログラム（2014年度; Stanford VIA / DSI）</p>
-      </div>
-    </div>
-    <!-- /row -->
-  </div>
-  <!-- /container -->
-
-  <div id="copyrights">
+    </nav>
+  </header>
+  <div class="content-wrapper">
     <div class="container">
-      <p>
-        Copyrights &copy; 2020 <strong>Aoi Naito</strong>. All Rights Reserved
-      </p>
-      <div class="credits">
-        <!--
-          You are NOT allowed to delete the credit link to TemplateMag with free version.
-          You can delete the credit link only if you bought the pro version.
-          Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/stanley-bootstrap-freelancer-template/
-          Licensing information: https://templatemag.com/license/
-        -->
-        Created with Stanley template by <a href="https://templatemag.com/">TemplateMag</a>
+      <section class="digital-marketing-service" id="bio-section">
+        <div class="row align-items-center">
+          <div class="col-12 text-center pb-5">
+            <h2>Biography</h2>
+          </div>
+          <div class="col-12 col-lg-7 text-center flex-item grid-margin">
+            <img src="images/face.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-12 col-lg-5 flex-item grid-margin">
+            <h3 class="m-0"><font color="#ff6347">内藤 碧 | Aoi Naito</font></h3>
+            <div class="col-lg-9 col-xl-8 p-0">
+              <ol><font color="#696969"><br>東京大学大学院人文社会系研究科<br>博士課程2年</font></ol>
+              <ol><font color="#696969">日本学術振興会特別研究員（DC1）</font></ol>
+            </div>
+            <a href="https://github.com/naito-aoi" class="fab fa-fw fa-github-square fa-3x" style="color:#161415;"></a>
+            <a href="https://orcid.org/0000-0003-4701-9123" class="fab fa-fw fa-orcid fa-3x" style="color:#a6ce39;"></a>
+            <a href="https://www.researchgate.net/profile/Aoi-Naito" class="fab fa-fw fa-researchgate fa-3x" style="color:#0cb;"></a>
+            <a href="https://www.linkedin.com/in/aoi-naito-4ba3b1193/" class="fab fa-fw fa-linkedin fa-3x" style="color:#0077b5;"></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-studies" id="case-studies-section">
+        <div class="row grid-margin">
+          <div class="col-12 text-left pb-5">
+            <h4><font color="#ff6347">Career</font></h4>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>期間</th>
+                <th>所属</th>
+                <th>資格</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2014年4月 - 2018年3月</td>
+                <td>京都大学　文学部</td>
+                <td>学士（文学）</td>
+              </tr>
+              <tr>
+                <td>2018年4月 - 2020年3月</td>
+                <td>東京大学大学院　人文社会系研究科</td>
+                <td>修士（社会心理学）</td>
+              </tr>
+              <tr>
+                <td>2020年4月 - 現在</td>
+                <td>東京大学大学院　人文社会系研究科</td>
+                <td>博士課程・在学中</td>
+              </tr>
+              <tr>
+                <td>2020年4月 - 現在</td>
+                <td>日本学術振興会</td>
+                <td>特別研究員（DC1）</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="row grid-margin">
+          <div class="col-12 text-left pb-5">
+            <h4><font color="#ff6347">Awards</font></h4>
+          </div>
+          <div class="col-lg-10 col-lg-offset-1">
+            <ol><a href="https://psych.or.jp/prize/conf/"><u><b>学術大会特別優秀発表賞</b></u></a>
+              <span class="fas fa-link" style="font-size:1rem; color:#ff6347;"></span>
+              <font color="#696969">日本心理学会（2021年度; 明星大学）</font></ol>
+            <ol><a href="http://www.fost.or.jp/award.html"><u><b>第8回FOST新人賞</b></u></a>
+              <span class="fas fa-link" style="font-size:1rem; color:#ff6347;"></span>
+              <font color="#696969">公益財団法人科学技術融合振興財団（2021年3月4日; コーエーテクモ日吉本社）</font></ol>
+            <ol><a href="http://www.socialpsychology.jp/award/wakate_2019_2.html"><u><b>若手研究者奨励賞</b></u></a>
+              <span class="fas fa-link" style="font-size:1rem; color:#ff6347;"></span>
+              <font color="#696969">日本社会心理学会（2019年度）</font></ol>
+            <ol><a href="https://sites.google.com/view/expss2018/home"><u><b>ポスター賞</b></u></a>
+              <span class="fas fa-link" style="font-size:1rem; color:#ff6347;"></span>
+              <font color="#696969">第22回実験社会科学カンファレンス（2018年12月22-23日; 名古屋市立大学）</font></ol>
+          </div>
+        </div>
+
+        <div class="row grid-margin">
+          <div class="col-12 text-left pb-5">
+            <h4><font color="#ff6347">Research funds</font></h4>
+          </div>
+          <div class="col-lg-10 col-lg-offset-1">
+            <ol><a href="https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-20J20900/"><u><b>特別研究員奨励費</b></u></a>
+              <span class="fas fa-link" style="font-size:1rem; color:#ff6347;"></span>
+              <font color="#696969">科学研究費助成事業（20J20900）（&yen;3,400,000; 2020年度-2022年度）</font></ol>
+            <ol><a href="http://www.fost.or.jp/subsidies.html"><u><b>補助金助成</b></u></a>
+              <span class="fas fa-link" style="font-size:1rem; color:#ff6347;"></span>
+              <font color="#696969">公益財団法人科学技術融合振興財団　（&yen;225,000; 2019年度）</font></ol>
+          </div>
+        </div>
+
+        <div class="row grid-margin">
+          <div class="col-12 text-left pb-5">
+            <h4><font color="#ff6347">MISC</font></h4>
+          </div>
+          <div class="col-lg-10 col-lg-offset-1">
+            <ol><a href="https://www.jasso.go.jp/shogakukin/taiyochu/gyosekimenjyo/index.html"><u><b>特に優れた業績による返還免除</b></u></a>
+              <span class="fas fa-link" style="font-size:1rem; color:#ff6347;"></span>
+              <font color="#696969">独立行政法人日本学生支援機構（2019年度）</font></ol>
+            <ol><a href="https://shibuya-qws.com/project/towards-the-mirror-world"><u><b>プロジェクト・メンバー</b></u></a>
+              <span class="fas fa-link" style="font-size:1rem; color:#ff6347;"></span>
+              <font color="#696969">渋谷スクランブルスクエア株式会社（2019年度; 渋谷QWSチャレンジプロジェクト・第1期）</font></ol>
+            <ol><a href="http://www.inoue-ikuei.jp/"><u><b>奨学生</b></u></a>
+              <span class="fas fa-link" style="font-size:1rem; color:#ff6347;"></span>
+              <font color="#696969">公益財団法人井上育英会（2015年度-2017年度）</font></ol>
+            <ol><a href="http://www.john-man.rp.kyoto-u.ac.jp/student/adption.html"><u><b>派遣学生</b></u></a>
+              <span class="fas fa-link" style="font-size:1rem; color:#ff6347;"></span>
+              <font color="#696969">京都大学若手海外派遣事業ジョン万プログラム（2014年度; Stanford VIA / DSI）</font></ol>
+          </div>
+        </div>
+      </section>
+
+      <footer class="border-top">
+        <p class="text-center text-muted pt-4">Copyright © 2020-2022<a href="https://naito-aoi.github.io/" class="px-1">Aoi Naito.</a>All rights reserved.</p>
+
+        <p class="text-center text-muted pt-2">Distributed By: <a href="https://www.themewagon.com/" class="px-1" target="_blank">Themewagon</a></p>
+      </footer>
+      <!-- Modal for Contact - us Button -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLabel">Contact Us</h4>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="Name">Name</label>
+                  <input type="text" class="form-control" id="Name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <label for="Email">Email</label>
+                  <input type="email" class="form-control" id="Email-1" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label for="Message">Message</label>
+                  <textarea class="form-control" id="Message" placeholder="Enter your Message"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Submit</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <!-- / copyrights -->
-
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="lib/php-mail-form/validate.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
-
+  <script src="vendors/jquery/jquery.min.js"></script>
+  <script src="vendors/bootstrap/bootstrap.min.js"></script>
+  <script src="vendors/owl-carousel/js/owl.carousel.min.js"></script>
+  <script src="vendors/aos/js/aos.js"></script>
+  <script src="js/landingpage.js"></script>
+  <script>
+    function alertFunction() {
+    alert("Sorry! This page is under construction.");
+    }
+  </script>
 </body>
 </html>
