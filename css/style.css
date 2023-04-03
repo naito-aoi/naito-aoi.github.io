@@ -86,6 +86,14 @@ p {
   color: #696969;
 }
 
+p.jp {
+  text-indent: 0rem;
+}
+
+p.en {
+  text-indent: 5rem;
+}
+
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
@@ -114,6 +122,10 @@ ul ul,
 ol ul,
 ul ol {
   margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 1rem;
 }
 
 dt {
