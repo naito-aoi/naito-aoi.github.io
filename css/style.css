@@ -498,6 +498,12 @@ mark,
   content: "\2014\00A0";
 }
 
+.img-base {
+  max-width: 100%;
+  height: 20rem;
+  margin-bottom: 2rem;
+}
+
 .img-fluid {
   max-width: 100%;
   height: 18rem;
